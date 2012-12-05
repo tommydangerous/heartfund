@@ -10,8 +10,13 @@ Heartfund::Application.routes.draw do
 
 	root to: 'pages#home'
 
+	# Donate
+	match '/donate' => 'donate#donate', as: :donate
+	match '/wepay-donate' => 'donate#wepay_donate', as: :wepay_donate
+
 	# Pages
 	match '/about' => 'pages#about', as: :about
+	match '/test' => 'pages#test', as: :test
 
 	# Sessions
 	match '/sign-in' => 'sessions#new', as: :signin

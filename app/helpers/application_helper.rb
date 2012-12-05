@@ -1,5 +1,6 @@
 module ApplicationHelper
 	# Logo font size 50; Dragonwick
+	# heartfund logo font size 100; frizquadrata
 
 	def title
 		base_title = 'Laurie Dang'

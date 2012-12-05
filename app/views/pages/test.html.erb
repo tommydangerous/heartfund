@@ -1,0 +1,7 @@
+<%= render 'shared/donate' %>
+<div id="wepayForm"></div>
+<%= @res %>
+<script type="text/javascript" src="https://www.wepay.com/js/iframe.wepay.js"></script>
+<script type="text/javascript">
+	WePay.iframe_checkout('wepayForm', "<%= @response %>");
+</script>

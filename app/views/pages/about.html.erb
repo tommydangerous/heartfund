@@ -1,1 +1,62 @@
-<h1>Coming soon...</h1>
+<%= content_for :head do %>
+<meta property="og:title" content="Let's join together and help Laurie">
+<meta property="og:image" content="http://heartlaurie.com/assets/laurie1.jpg">
+<meta property="og:site_name" content="We Heart Laurie">
+<meta property="og:description" content="<%= short_info %>">
+<meta property="og:url" content="<%= request.url %>">
+<% end %>
+<%= render 'layouts/below_header' %>
+<div class="mainContent">
+	<div class="aboutSection epilogue">
+		<h1>Epilogue</h1>
+		<div class="aboutImage">
+			<div class="aboutImageContainer">
+				<%= image_tag '/assets/laurie6.jpg' %>
+			</div>
+		</div>
+		<div class="aboutInfo">
+			<%= epilogue %>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="aboutSection nightmare">
+		<h1>Nightmare</h1>
+		<div class="aboutImage">
+			<div class="aboutImageContainer">
+				<%= image_tag '/assets/laurie7.jpg' %>
+			</div>
+		</div>
+		<div class="aboutInfo">
+			<%= nightmare %>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="aboutSection aftermath">
+		<h1>Aftermath</h1>
+		<div class="aboutImage">
+			<div class="aboutImageContainer">
+				<%= image_tag '/assets/laurie8.jpg' %>
+			</div>
+		</div>
+		<div class="aboutInfo">
+			<%= aftermath %>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="aboutSection prologue">
+		<h1>Prologue</h1>
+		<div class="aboutImage">
+			<div class="aboutImageContainer">
+				<%= image_tag '/assets/laurie9.jpg' %>
+			</div>
+		</div>
+		<div class="aboutInfo">
+			<%= prologue %>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<%= render 'shared/help' %>
+</div>
+<div class="commentForm">
+	<%= render 'comments/comment_form' %>
+</div>

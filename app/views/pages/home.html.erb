@@ -3,14 +3,9 @@
 <meta property="og:image" content="http://heartlaurie.com/assets/laurie1.jpg">
 <meta property="og:site_name" content="We Heart Laurie">
 <meta property="og:description" content="<%= short_info %>">
+<meta property="og:url" content="<%= request.url %>">
 <% end %>
-<div class="belowHeader">
-	<%= image_tag '/assets/laurie_dang.png', class: 'nameLogo' %>
-	<div class="comments">
-		<%= render @comments %>
-	</div>
-	<div class="clear"></div>
-</div>
+<%= render 'layouts/below_header' %>
 <div class="mainContent">
 	<div class="images">
 		<div class="imagesContainer" id="cycle">
@@ -23,7 +18,7 @@
 	</div>
 	<div class="mainContentRight">
 		<div class="shortInfo">
-			<p><%= short_info %></p>
+			<%= short_info %>
 			<div class="readMore">
 				<%= link_to 'Read more...', about_path %>
 			</div>
@@ -33,50 +28,7 @@
 		<%= render 'shared/donate_button' %>
 	</div>
 	<div class="clear"></div>
-	<div class="help">
-		<h1>How I Can Help</h1>
-		<ul>
-			<li>
-				<div class="helpGroup helpDonate">
-					<h2>Donate</h2>
-					<%= link_to image_tag('/assets/donate.png'), '#' %>
-					<p>You can really help Laurie by donating from the kindness of your heart. Anything you give will help in ways unimaginable.</p>
-				</div>
-			</li>
-			<li class="groupArrow"><div><div></div></div></li>
-			<li>
-				<div class="helpGroup helpShare">
-					<h2>Share</h2>
-					<div class="helpImageContainer">
-						<div class="facebook">
-							<%= link_to("https://www.facebook.com/sharer/sharer.php?u=#{request.url}", class: 'popup') do %>
-								<%= image_tag '/assets/facebook.png' %>
-							<% end %>
-						</div>
-						<div class="twitter">
-							<%= link_to("https://twitter.com/intent/tweet?original_referer=&text=#{CGI.escape('Join in and help our beloved Laurie Dang')}%20#{@short.shorten(request.url).url}", class: 'popup') do %>
-								<%= image_tag '/assets/twitter.png' %>
-							<% end %>
-						</div>
-					</div>
-					<p>Share this page and Laurie's story with your friends and family through word of mouth and social media.</p>
-				</div>
-			</li>
-			<li class="groupArrow"><div><div></div></div></li>
-			<li>
-				<div class="helpGroup helpComment">
-					<h2>Comment</h2>
-					<%= link_to image_tag('/assets/comment.png'), '#' %>
-					<p>Show Laurie your support and leave a comment wishing her the best, she would be thrilled to hear your voice.</p>
-				</div>
-			</li>
-			<div class="clear"></div>
-		</ul>
-		<div class="helpArrow"></div>
-		<div class="helpDonateButton">
-			<%= render 'shared/donate_button' %>
-		</div>
-	</div>
+	<%= render 'shared/help' %>
 </div>
 <div class="commentForm">
 	<%= render 'comments/comment_form' %>

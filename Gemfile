@@ -11,6 +11,10 @@ gem 'aws-s3'
 gem 'pg'
 gem 'taps'
 gem 'shortly'
+gem 'certified'
+
+# gem 'wepay-rails'
+gem 'wepay', :git => 'git://github.com/wepay/Ruby-SDK'
 
 group :production do
 #	gem 'pg'

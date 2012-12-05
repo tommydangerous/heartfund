@@ -1,0 +1,3 @@
+$('.donateFormAmount').remove();
+$('.donateForm').html("<%= escape_javascript(render(partial: 'donate/wepay_donate_form')) %> ")
+WePay.iframe_checkout('wepayForm', "<%= @response %>");

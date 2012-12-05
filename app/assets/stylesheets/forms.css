@@ -50,22 +50,22 @@
 }
 
 .action input {
-	background: rgb(63, 171, 218);
+	background: rgb(200, 94, 199);
 	color: rgb(245, 245, 245);
 }
+
+.action input:hover, .action input:focus {
+	background: rgb(222, 71, 172);
+	cursor: pointer;
+	outline: none;
+}
+
 
 .action a {
 	background: rgb(210, 210, 210);
 	color: rgb(70, 70, 70);
 	margin: 0 0 0 5px;
 }
-
-.action input:hover, .action input:focus {
-	background: rgb(73, 181, 228);
-	cursor: pointer;
-	outline: none;
-}
-
 .action a:hover {
 	background: rgb(200, 200, 200);
 }
