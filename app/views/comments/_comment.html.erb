@@ -1,0 +1,12 @@
+<div class="comment">
+	<div class="commentContent">
+		<p>"<%= comment.content %>"</p>
+	</div>
+	<div class="commentName">
+		<% if comment.name.blank? %>
+			<p>- Anonymous</p>
+		<% else %>
+			<p>- <%= comment.name %></p>
+		<% end %>
+	</div>
+</div>

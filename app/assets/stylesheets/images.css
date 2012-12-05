@@ -1,0 +1,26 @@
+.images {
+	background: rgb(255, 255, 255);
+	float: left;
+	height: 400px;
+	padding: 20px;
+	text-align: center;
+	width: 400px;
+	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-khtml-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.imagesContainer {
+	height: 400px;
+	overflow: hidden;
+	position: absolute;
+	width: 400px;
+	z-index: 100;
+}
+
+.images img {
+	max-height: 400px;
+}

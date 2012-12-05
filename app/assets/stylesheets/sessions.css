@@ -1,0 +1,29 @@
+.signIn {
+	margin: 0 auto;
+	width: 450px;
+}
+
+.welcome {
+	height: 60px;
+	left: -5px;
+	margin: 60px 0 40px 0;
+	position: relative;
+}
+
+.heart, .heartfund {
+	float: left;
+}
+
+.heart img {
+	height: 60px;
+	width: 60px;
+}
+
+.heartfund {
+	margin: 0 0 0 10px;
+	padding: 10px 0;
+}
+
+.heartfund img {
+	max-height: 40px;
+}

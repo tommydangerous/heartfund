@@ -1,0 +1,43 @@
+.header {
+	background: rgb(200, 94, 199);
+	height: 30px;
+}
+
+.inHeader {
+	height: 30px;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.logo {
+	height: 16px;
+	padding: 7px 10px;
+	width: 16px;
+}
+
+.headerNav {
+	float: right;
+}
+
+.headerNav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.headerNav ul li {
+	display: inline-block;
+}
+
+.headerNav ul li a {
+	color: rgb(255, 255, 255);
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	height: 14px;
+	padding: 8px 15px;
+}
+
+.headerNav ul li a:hover {
+	background: rgb(222, 71, 172);
+}

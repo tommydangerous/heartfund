@@ -1,0 +1,17 @@
+.footer {
+	background: rgb(225, 225, 225);
+	height: 26px;
+	margin-top: -26px;
+}
+
+.copyright {
+	position: relative;
+	top: 7px;
+}
+
+.copyright p {
+	color: rgb(140, 140, 140);
+	font-size: 10px;
+	height: 12px;
+	text-align: center;
+}

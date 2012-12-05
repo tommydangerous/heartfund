@@ -1,0 +1,6 @@
+<div class="approved">
+	<%= render partial: 'comments/pending_comment', collection: @approved, as: :comment %>
+</div>
+<div class="pending">
+	<%= render partial: 'comments/pending_comment', collection: @pending, as: :comment %>
+</div>

@@ -1,0 +1,20 @@
+<div class="commentFormHeader">
+	<h1>Leave a Comment</h1>
+	<div class="commentFormToggle">
+		<div class="commentFormShow"></div>
+		<div class="commentFormHide"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+<%= form_for(Comment.new, remote: true) do |f| %>
+	<div class="field">
+		<p>Name</p>
+		<%= f.text_field :name, autocomplete: 'off' %>
+	</div>
+	<div class="field">
+		<%= f.text_area :content %>
+	</div>
+	<div class="action">
+		<%= f.submit 'Submit' %>
+	</div>
+<% end %>
