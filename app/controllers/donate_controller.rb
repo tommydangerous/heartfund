@@ -9,7 +9,11 @@ class DonateController < ApplicationController
 		if amount < 0.99
 			amount = 0.99
 		end
-		wepay = WePay.new(client_id, client_secret)
+		if Rails.env.production?
+			wepay = WePay.new(client_id, client_secret, false)
+		else
+			wepay = WePay.new(client_id, client_secret)
+		end
 		response = wepay.call('/checkout/create', access_token, {
 			account_id: account_id,
 			amount: amount,
