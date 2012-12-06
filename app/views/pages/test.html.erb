@@ -1,3 +1,6 @@
+<%= request.url.split(request.fullpath)[0] %>
+<%= thank_you_path %>
+<%= [request.url.split(request.fullpath)[0], thank_you_path].join('') %>
 <%= render 'shared/donate' %>
 <div id="wepayForm"></div>
 <%= @res %>

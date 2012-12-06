@@ -1,0 +1,17 @@
+.thankyou {
+	margin: 40px auto;
+	padding: 20px;
+	width: 500px;
+}
+
+.thankyou h1 {
+	font-size: 36px;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+}
+
+.thankyou p {
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0 0 14px 0;
+}

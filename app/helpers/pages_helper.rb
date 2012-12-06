@@ -1,5 +1,23 @@
 module PagesHelper
 
+	def short_info_meta
+		"Novels cannot describe the joy that Laurie's life brings to this 
+		world. Paintings and songs cannot capture the beauty and 
+		compassion she possesses. No force can match the impact Laurie 
+		has made on the lives of those around her. She is the most 
+		wonderful, kind, compassionate, and caring person.
+		The nightmare started one dreadful evening on October 18, 2012. 
+		The Sun was low and the dust was settling as Laurie began to 
+		climb. Midway through her ascension, she realized the summit was 
+		out of reach and retreat was the only option available.
+		During her slow and careful descent, the rocks beneath her feet 
+		betrayed her. As Laurie fell, time stood still. A fall from high 
+		up can end in only a matter of seconds, but to the one who is 
+		experiencing it, the fall can appear to last forever. As eternity 
+		came to an end and Laurie made contact with the ground, all hell 
+		broke loose."
+	end
+
 	def short_info
 		a = content_tag :p do
 			"Novels cannot describe the joy that Laurie's life brings to this 

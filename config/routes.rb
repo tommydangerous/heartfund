@@ -13,6 +13,7 @@ Heartfund::Application.routes.draw do
 	# Donate
 	match '/donate' => 'donate#donate', as: :donate
 	match '/wepay-donate' => 'donate#wepay_donate', as: :wepay_donate
+	match '/thank-you' => 'donate#thank_you', as: :thank_you
 
 	# Pages
 	match '/about' => 'pages#about', as: :about

@@ -8,6 +8,11 @@
 		<%= csrf_meta_tags %>
 		<%= favicon_link_tag 'favicon.ico' %>
 		<meta charset="UTF-8">
+		<meta property="og:title" content="Let's join together and help Laurie">
+		<meta property="og:image" content="http://heartlaurie.com/assets/laurie1.jpg">
+		<meta property="og:site_name" content="We Heart Laurie">
+		<meta property="og:description" content="<%= short_info_meta %>">
+		<meta property="og:url" content="<%= request.url.split(request.fullpath)[0] %>">
 		<%= yield :head %>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
