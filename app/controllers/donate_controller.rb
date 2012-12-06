@@ -5,10 +5,7 @@ class DonateController < ApplicationController
 	end
 
 	def wepay_donate
-		amount = (params[:amount].to_f - 0.3)/1.029
-		if amount < 0.99
-			amount = 0.99
-		end
+		amount = calculate_donation(params[:amount])
 		if Rails.env.production?
 			wepay = WePay.new(client_id, client_secret, false)
 		else
