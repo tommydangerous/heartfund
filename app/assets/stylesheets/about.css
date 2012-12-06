@@ -44,22 +44,22 @@
 }
 
 /* Specific sections */
-.nightmare h1, .prologue h1 {
+.nightmare h1, .epilogue h1 {
 	text-align: right;
 }
 
-.epilogue .aboutImage, .aftermath .aboutImage {
+.prologue .aboutImage, .aftermath .aboutImage {
 	float: left;
 }
 
-.epilogue .aboutInfo, .aftermath .aboutInfo {
+.prologue .aboutInfo, .aftermath .aboutInfo {
 	float: right;
 }
 
-.nightmare .aboutImage, .prologue .aboutImage {
+.nightmare .aboutImage, .epilogue .aboutImage {
 	float: right;
 }
 
-.nightmare .aboutInfo, .prologue .aboutInfo {
+.nightmare .aboutInfo, .epilogue .aboutInfo {
 	float: left;
 }
