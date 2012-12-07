@@ -127,3 +127,31 @@
 .helpDonateButton {
 	margin: 60px 0 0 0;
 }
+
+/* No donate */
+#helpNoDonate .help {
+	height: 400px;
+	margin: 0;
+}
+
+#helpNoDonate .help h1 {
+	display: none;
+}
+
+#helpNoDonate .help ul {
+	margin: 0 auto;
+	padding: 0;
+	width: 540px;
+}
+
+#helpNoDonate .helpDonate, #helpNoDonate li:nth-child(2) {
+	display: none;
+}
+
+#helpNoDonate .helpArrow, #helpNoDonate .helpDonateButton {
+	display: none;
+}
+
+#helpNoDonate .groupArrow div div {
+	left: 35px;
+}
