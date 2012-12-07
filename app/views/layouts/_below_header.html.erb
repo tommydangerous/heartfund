@@ -1,5 +1,7 @@
 <div class="belowHeader">
-	<%= image_tag '/assets/laurie_dang.png', class: 'nameLogo' %>
+	<%= link_to root_path do %>
+		<%= image_tag '/assets/laurie_dang.png', class: 'nameLogo' %>
+	<% end %>
 	<div class="comments">
 		<%= render @comments %>
 	</div>

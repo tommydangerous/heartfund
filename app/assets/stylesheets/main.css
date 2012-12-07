@@ -39,6 +39,10 @@ a {
 	padding: 0;
 }
 
+.red {
+	color: rgb(255, 26, 0);
+}
+
 .grey70 {
 	color: rgb(70, 70, 70);
 }

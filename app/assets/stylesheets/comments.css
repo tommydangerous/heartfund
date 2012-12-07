@@ -126,6 +126,7 @@
 	background: rgb(200, 94, 199);
 	border: none;
 	color: rgb(255, 255, 255);
+	float: right;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	margin: 0;
@@ -139,6 +140,15 @@
 
 .commentForm .action input:focus {
 	outline: none;
+}
+
+.commentCounter {
+	color: rgb(140, 140, 140);
+	float: right;
+	font-size: 14px;
+	margin: 0 20px 0 0;
+	position: relative;
+	top: 5px;
 }
 
 /* Comment confirm */
