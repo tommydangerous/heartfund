@@ -19,7 +19,7 @@
 						<% end %>
 					</div>
 					<div class="twitter">
-						<%= link_to("https://twitter.com/intent/tweet?original_referer=&text=#{CGI.escape('Join in and help our beloved Laurie Dang')}%20#{@short.shorten(request.url).shorturl}", class: 'popup') do %>
+						<%= link_to("https://twitter.com/intent/tweet?original_referer=&text=#{CGI.escape('Join in and help our beloved Laurie Dang')}%20#{@short.shorten(request.url.split(request.fullpath)[0]).shorturl}", class: 'popup') do %>
 							<%= image_tag '/assets/twitter.png' %>
 						<% end %>
 					</div>
