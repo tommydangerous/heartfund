@@ -1,44 +1,38 @@
 module PagesHelper
 
-	def short_info_meta
-		"Novels cannot describe the joy that Laurie's life brings to this 
-		world. Paintings and songs cannot capture the beauty and 
-		compassion she possesses. No force can match the impact Laurie 
-		has made on the lives of those around her. She is the most 
-		wonderful, kind, and caring person.
-		The nightmare started one dreadful evening on October 18, 2012. 
+	def short_info_parts
+		[
+		"The nightmare started one dreadful evening on October 18, 2012. 
 		The Sun was low and the dust was settling as Laurie began to 
 		climb. Midway through her ascension, she realized the summit was 
-		out of reach and retreat was the only option available.
-		During her slow and careful descent, the rocks beneath her feet 
+		out of reach and retreat was the only option available.",
+		"During her slow and careful descent, the rocks beneath her feet 
 		betrayed her. As Laurie fell, time stood still. A fall from high 
 		up can end in only a matter of seconds, but to the one who is 
 		experiencing it, the fall can appear to last forever. As eternity 
 		came to an end and Laurie made contact with the ground, all hell 
-		broke loose."
+		broke loose.",
+		"She is now faced with a colossal medical bill. At the 
+		time of the accident, Laurie was without health insurance; 
+		therefore, she is forced to burden the medical expenses in its 
+		entirety. Let us help her endure this burden so that she may once 
+		again live."
+		]
+	end
+
+	def short_info_meta
+		short_info_parts.join(' ')
 	end
 
 	def short_info
 		a = content_tag :p do
-			"Novels cannot describe the joy that Laurie's life brings to this 
-			world. Paintings and songs cannot capture the beauty and 
-			compassion she possesses. No force can match the impact Laurie 
-			has made on the lives of those around her. She is the most 
-			wonderful, kind, and caring person."
+			short_info_parts[0]
 		end
 		b = content_tag :p do
-			"The nightmare started one dreadful evening on October 18, 2012. 
-			The Sun was low and the dust was settling as Laurie began to 
-			climb. Midway through her ascension, she realized the summit was 
-			out of reach and retreat was the only option available."
+			short_info_parts[1]
 		end
 		c = content_tag :p do
-			"During her slow and careful descent, the rocks beneath her feet 
-			betrayed her. As Laurie fell, time stood still. A fall from high 
-			up can end in only a matter of seconds, but to the one who is 
-			experiencing it, the fall can appear to last forever. As eternity 
-			came to an end and Laurie made contact with the ground, all hell 
-			broke loose."
+			short_info_parts[2]
 		end
 		a + b + c
 	end

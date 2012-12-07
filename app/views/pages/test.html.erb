@@ -1,10 +1,1 @@
-<%= request.url.split(request.fullpath)[0] %>
-<%= thank_you_path %>
-<%= [request.url.split(request.fullpath)[0], thank_you_path].join('') %>
-<%= render 'shared/donate' %>
-<div id="wepayForm"></div>
-<%= @res %>
-<script type="text/javascript" src="https://www.wepay.com/js/iframe.wepay.js"></script>
-<script type="text/javascript">
-	WePay.iframe_checkout('wepayForm', "<%= @response %>");
-</script>
+<%= short_info_meta %>
