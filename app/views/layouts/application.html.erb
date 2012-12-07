@@ -12,7 +12,7 @@
 		<meta property="og:image" content="http://heartlaurie.com/assets/laurie1.jpg">
 		<meta property="og:site_name" content="We Heart Laurie">
 		<meta property="og:description" content="<%= short_info_meta %>">
-		<meta property="og:url" content="<%= request.url.split(request.fullpath)[0] %>">
+		<meta property="og:url" content="<%= request.fullpath %>">
 		<%= yield :head %>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
