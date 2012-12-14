@@ -1,17 +1,32 @@
 /* Comment partial */
+.comments, .commentsContainer, .comment {
+	height: 95px;
+	width: 500px;
+}
+
+.comments, .commentsContainer {
+	overflow: hidden;
+}
+
+.commentsContainer, .commentsScroll {
+	position: absolute;
+}
+
 .comments {
 	float: right;
-	height: 86px;
-	width: 500px;
+}
+
+.commentsContainer {
+	z-index: 1;
+}
+
+.commentsScroll {
+	z-index: 0;
 }
 
 .comment {
 	color: rgb(140, 140, 140);
-	display: none;
 	font-size: 14px;
-	height: 86px;
-	position: absolute;
-	width: 500px;
 }
 
 .commentContent {

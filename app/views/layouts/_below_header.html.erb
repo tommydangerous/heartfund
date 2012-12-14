@@ -3,7 +3,11 @@
 		<%= image_tag '/assets/laurie_dang.png', class: 'nameLogo' %>
 	<% end %>
 	<div class="comments">
-		<%= render @comments %>
+		<div class="commentsContainer">
+	        <div class="commentsScroll">
+				<%= render @comments %>
+	        </div>
+	    </div>
 	</div>
 	<div class="clear"></div>
 </div>

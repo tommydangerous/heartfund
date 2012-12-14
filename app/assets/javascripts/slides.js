@@ -5,8 +5,36 @@ $(document).ready(function() {
 		delay: -1000
 	})
 	// Comments
-	commentSlide();
+	commentsScroll();
 })
+
+function moveComment() {
+	var timer = 6000;
+	var height = 95;
+	var totalDistance = (totalComments + 1) * height;
+	var scroll = $('.commentsScroll');
+	if (counter < totalComments) {
+		counter++;
+		scroll.delay(timer).animate({
+			top: '-=' + height
+		}, 1000, moveComment);
+	}
+	else {
+		counter = 0;
+		scroll.animate({
+			top: '+=' + totalDistance
+		}, 0, moveComment);
+	}
+}
+
+function commentsScroll() {
+	totalComments = 0;
+	counter = 0;
+	$('.comments .comment').each(function() {
+		totalComments++;
+	})
+	moveComment();
+}
 
 function showComment(object) {
 	object.show('slide', { direction: 'down' }, 1000)
