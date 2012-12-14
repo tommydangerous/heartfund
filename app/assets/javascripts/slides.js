@@ -26,9 +26,9 @@ function commentSlide() {
 		setTimeout(function() {
 			showComment(comment);
 			hideComment(comment);
-		}, 5000 * (index))
+		}, 6000 * (index))
 	})
 	setTimeout(function() {
 		commentSlide();
-	}, 5000 * totalComments)
+	}, 6000 * totalComments)
 }
