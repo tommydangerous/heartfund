@@ -48,13 +48,12 @@
 .donate img {
 	float: left;
 	height: 30px;
-	margin: 0 10px 0 0;
 	width: 30px;
 }
 
 .donate p {
 	color: rgb(255, 255, 255);
-	float: left;
+	float: right;
 	font-size: 26px;
 	font-weight: 700;
 	height: 30px;
